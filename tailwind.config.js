@@ -2,6 +2,15 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        mono: [
+          'RobotoMono-Medium',
+          'Menlo',
+          'Monaco',
+          'Consolas',
+          '"Liberation Mono"',
+          '"Courier New"',
+          'monospace',
+        ],
         sans: [
           'Avenir',
           '-apple-system',
@@ -16,6 +25,14 @@ module.exports = {
           '"Segoe UI Emoji"',
           '"Segoe UI Symbol"',
           '"Noto Color Emoji"'
+        ],
+        serif: [
+          'Poppins',
+          'Georgia',
+          'Cambria',
+          '"Times New Roman"',
+          'Times',
+          'serif'
         ]
       }
     }

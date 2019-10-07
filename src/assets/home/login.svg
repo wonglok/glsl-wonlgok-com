@@ -1,0 +1,15 @@
+
+<svg width="62px" height="21px" viewBox="0 0 62 21" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-Hero-1-Copy" transform="translate(-320.000000, -47.000000)" fill="#FFFFFF">
+            <g id="nav" transform="translate(30.000000, 31.000000)">
+                <g id="sign-in-button" transform="translate(290.000000, 12.000000)">
+                    <text id="Sign-in" font-family="Poppins-Regular, Poppins" font-size="12" font-weight="normal" letter-spacing="3">
+                        <tspan x="0" y="13">SIGN IN</tspan>
+                    </text>
+                    <rect id="Rectangle-6" fill-rule="nonzero" x="0" y="24" width="62" height="1"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
