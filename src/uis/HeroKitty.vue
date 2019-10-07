@@ -1,12 +1,12 @@
 
 <template>
-  <div class="full herobg bg-no-repeat bg-cover bg-center">
-    <div class="absolute logo-pos flex items-center cursor-pointer">
+  <div class="full absolute top-0 left-0 herobg bg-no-repeat bg-cover bg-center">
+    <div class="absolute logo-pos-2 flex items-center cursor-pointer">
       <img src="../assets/icons/logo.svg" alt="logo">
-      <img src="../assets/home/glsl-js.svg" class="hidden lg:block ml-5" alt="glsl and js academy">
+      <img src="../assets/home/glsl-js.svg" class="ml-5 hidden xl:block" alt="glsl and js academy">
     </div>
 
-    <div class="absolute login-pos">
+    <div class="absolute login-pos-2">
       <img src="../assets/home/login.svg" class="cursor-pointer" alt="login">
     </div>
 
@@ -24,7 +24,7 @@
         <div class="love-and-more font-serif cursor-pointer">
           LOVE AND MORE
         </div>
-        <img src="../assets/icons/arrow-down.svg" class="mt-4  cursor-pointer" alt="">
+        <img  src="../assets/icons/circle.svg" class="mt-4  cursor-pointer flowdown" alt="">
       </div>
     </div>
 
@@ -42,14 +42,14 @@ export default {
   background-position: 50% 95%;
   background-image: url('../assets/img/kitty-sleep.jpg');
 }
-.logo-pos{
+.logo-pos-2{
   top: 40px;
-  left: 40px;
+  left: 35px;
 }
 
-.login-pos{
+.login-pos-2{
   top: 50px;
-  right: 40px;
+  right: 35px;
 }
 
 .vela-pos{
@@ -70,6 +70,7 @@ export default {
 }
 
 .desc{
+  padding: 0px 12px;
   font-size: 17px;
   color: #FFFFFF;
   letter-spacing: 0;
@@ -97,5 +98,27 @@ export default {
   font-size: 12px;
   color: #FFFFFF;
   letter-spacing: 3px;
+}
+
+@keyframes flowdown {
+  0%{
+    opacity: 0;
+    transform: scale(0.26);
+  }
+  15%{
+    opacity: 1;
+  }
+  85%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+    transform: scale(1.15);
+  }
+}
+
+.flowdown {
+  width: 30px;
+  animation: flowdown 1s linear 0s infinite normal both;
 }
 </style>
