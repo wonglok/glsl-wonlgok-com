@@ -1,10 +1,10 @@
 
 <template>
-  <div class="full">
+  <div class="full bg-white">
     <TopNav mode="dark"></TopNav>
     <div class="flex justify-center items-center fuller">
       <div class="flex flex-col full justify-between">
-        <div class="w-full bg-white">
+        <div class="w-full">
         </div>
         <form class="w-full fruit bg-cover">
           <div class="full form-area relative">
