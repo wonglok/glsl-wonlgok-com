@@ -1,6 +1,8 @@
 <template>
   <div class="full relative overflow-hidden">
     <TopNav></TopNav>
+    <div class="fuller">
+    </div>
   </div>
 </template>
 

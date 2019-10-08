@@ -5,7 +5,7 @@
       <img src="../assets/home/glsl-js.svg" class="ml-5 hidden xl:block" alt="glsl and js academy">
     </div>
 
-    <div class="fixed login-pos-2">
+    <div class="fixed login-pos-2" v-if="!isAtAuth">
       <img src="../assets/home/login.svg" class="cursor-pointer" alt="login" @click="$router.push('/login')">
     </div>
     <div class="taller"></div>
@@ -17,7 +17,7 @@
       <img src="../assets/home/glsl-js-dark.svg" class="ml-5 hidden xl:block" alt="glsl and js academy">
     </div>
 
-    <div class="fixed login-pos-2">
+    <div class="fixed login-pos-2" v-if="!isAtAuth">
       <img src="../assets/home/login-dark.svg" class="cursor-pointer" alt="login" @click="$router.push('/login')">
     </div>
 
@@ -30,6 +30,11 @@ export default {
   props: {
     mode: {
       default: 'dark'
+    }
+  },
+  computed: {
+    isAtAuth () {
+      return this.$route.path === '/login' || this.$route.path === '/register'
     }
   }
 }
