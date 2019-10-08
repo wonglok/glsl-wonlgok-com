@@ -1,6 +1,8 @@
+
 <template>
-  <div class="full relative overflow-hidden">
-    <TopNav></TopNav>
+  <div class="full">
+    <TopNav mode="dark"></TopNav>
+    1`23
   </div>
 </template>
 

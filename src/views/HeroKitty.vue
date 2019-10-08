@@ -1,14 +1,8 @@
 
 <template>
   <div class="full absolute top-0 left-0 herobg bg-no-repeat bg-cover bg-center">
-    <div class="absolute logo-pos-2 flex items-center cursor-pointer">
-      <img src="../assets/icons/logo.svg" alt="logo">
-      <img src="../assets/home/glsl-js.svg" class="ml-5 hidden xl:block" alt="glsl and js academy">
-    </div>
 
-    <div class="absolute login-pos-2">
-      <img src="../assets/home/login.svg" class="cursor-pointer" alt="login">
-    </div>
+    <TopNav mode="light"></TopNav>
 
     <div class="absolute vela-pos">
       <img src="../assets/home/vela.svg" alt="">
@@ -19,8 +13,8 @@
       </div>
     </div>
 
-    <div class="absolute arrow-down">
-      <div class=" flex flex-col justify-center items-center" @click="$emit('hero', 'fruit')">
+    <div class="absolute arrow-down"  @click="$router.push('/about')">
+      <div class=" flex flex-col justify-center items-center">
         <div class="love-and-more font-serif cursor-pointer">
           LOVE AND MORE
         </div>
@@ -33,7 +27,9 @@
 
 <script>
 export default {
-
+  components: {
+    TopNav: require('../uis/TopNav.vue').default
+  }
 }
 </script>
 
@@ -41,15 +37,6 @@ export default {
 .herobg{
   background-position: 50% 95%;
   background-image: url('../assets/img/kitty-sleep.jpg');
-}
-.logo-pos-2{
-  top: 40px;
-  left: 35px;
-}
-
-.login-pos-2{
-  top: 50px;
-  right: 35px;
 }
 
 .vela-pos{
