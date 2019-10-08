@@ -7,6 +7,13 @@
 </template>
 
 <style>
+body {
+  background-color: #E7D7CC;
+}
+.fuller{
+  height: calc(100% - 110px);
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

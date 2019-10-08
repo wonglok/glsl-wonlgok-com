@@ -2,6 +2,14 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
+        title: [
+          'Eczar',
+          'Georgia',
+          'Cambria',
+          '"Times New Roman"',
+          'Times',
+          'serif'
+        ],
         mono: [
           'RobotoMono-Medium',
           'Menlo',
