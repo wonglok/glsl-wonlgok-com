@@ -45,4 +45,10 @@ body {
   opacity: 0;
   /* transform: perspective(100vmax) translateZ(-400px) rotateX(10deg) translateY(-150%); */
 }
+
+::selection {
+  color: rgb(252, 230, 230);
+  background: rgba(240, 159, 93, 0.685);
+  /* background: linear-gradient(45deg, rgba(240, 159, 93, 0.685), rgba(240, 230, 93, 0.685)); */
+}
 </style>

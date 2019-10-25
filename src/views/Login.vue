@@ -13,8 +13,8 @@
             </div>
 
             <div class=" font-sans absolute login-fields">
-              <input type="text" autocomplete="reg username" class=" lg:text-3xl appearance-none bg-transparent border-black border-b-2 w-full font-black rounded-none" placeholder="username">
-              <input type="password"  autocomplete="reg password2" class=" lg:text-3xl appearance-none bg-transparent border-black mt-8 border-b-2 w-full font-black rounded-none" placeholder="password">
+              <input type="text" autocomplete="reg username" class="holder lg:text-3xl appearance-none bg-transparent border-black border-b-2 w-full font-black rounded-none" placeholder="username">
+              <input type="password"  autocomplete="reg password2" class="holder lg:text-3xl appearance-none bg-transparent border-black mt-8 border-b-2 w-full font-black rounded-none" placeholder="password">
             </div>
 
             <img src="../assets/auth/go.svg" class="absolute go" alt="go" />
@@ -85,5 +85,9 @@ export default {
     top: -15px;
     left: 550px;
   }
+}
+
+.holder::placeholder{
+  color: rgba(0, 0, 0, 0.432);
 }
 </style>

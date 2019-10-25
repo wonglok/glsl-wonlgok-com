@@ -17,7 +17,7 @@ module.exports = {
           'Consolas',
           '"Liberation Mono"',
           '"Courier New"',
-          'monospace',
+          'monospace'
         ],
         sans: [
           'Avenir',
